@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국어 기초 문법 학습</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="main-content">
+        <div id="welcome-section">
+            <h1>한국어 학습의 첫걸음!</h1>
+            <p>
+                한국어를 처음 시작하는 당신을 위한 문법 학습 사이트입니다.
+                <br>
+                복잡한 설명은 이제 그만!
+                <br>
+                실생활에서 바로 사용할 수 있는 핵심 문법만 엄선했어요.
+            </p>
+            <p>이곳에서 얻어갈 수 있는 것:</p>
+            <ul>
+                <li>✨ **핵심 문법 집중 학습**: 꼭 필요한 개념을 명확하게 이해해요.</li>
+                <li>✍️ **실용적인 문제 풀이**: 배운 문법을 바로 적용하며 실력을 키워요.</li>
+                <li>🚀 **단계별 학습 여정**: 한국어 학습을 쉽고 재미있게 시작할 수 있어요.</li>
+            </ul>
+            <button id="start-learning-button">지금 바로 학습 시작하기!</button>
+        </div>
+
+        <div id="learning-header" style="display: none;">
+            <button id="go-home-button">홈으로</button>
+            <p id="grammar-selection-guide">배우고 싶은 문법을 선택해 주세요.</p>
+        </div>
+
+        <div id="grammar-selection-buttons" style="display: none;"></div> 
+
+        <div id="grammar-info-section" style="display: none;"></div> 
+
+        <div id="quiz-section" style="display: none;">
+            <h2>문제 풀기</h2>
+            <p>아래 문장을 올바른 형태로 완성해보세요.</p>
+            <p id="question"></p> 
+            <input type="text" id="answer-input" placeholder="정답을 입력하세요">
+            <button onclick="checkAnswer()" id="check-answer-button">정답 확인</button>
+            <button onclick="loadNextQuestion()" id="next-question-button" style="margin-left: 10px;">다음 문제</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
